@@ -1,7 +1,7 @@
-This library contains an experimental implementation of Banzhaf values for interpretation of tree-based models based on [Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf](https://arxiv.org/abs/2108.04126). This is an alternative to [shap](https://github.com/slundberg/shap).
+This library contains an experimental implementation of Banzhaf values for interpretation of tree-based models described in [Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf](https://arxiv.org/abs/2108.04126). This is an alternative to [shap](https://github.com/slundberg/shap).
 The main advantages over shap:
- - faster running times - even order of magnitude for some datasets.
- - better numerical stability. For very large trees (over 50) shap might give unreliable results. We observed some issues for much smaller trees of size 10.
+ - Faster running times - even order of magnitude for some datasets.
+ - Better numerical stability. For very large trees (over 50) shap might give unreliable results. We observed some issues for much smaller trees of size 10.
 
  For majority of the cases, shap and ban give identical or very similar ordering and relative values of features. For more details please check this [paper](https://arxiv.org/abs/2108.04126).
 
