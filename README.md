@@ -1,9 +1,9 @@
-This library contains experimental implementation of Banzhaf values for interpretation of tree-based models based on [Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf](https://arxiv.org/abs/2108.04126). This is an alternative to [shap](https://github.com/slundberg/shap).
+This library contains an experimental implementation of Banzhaf values for interpretation of tree-based models based on [Improved Feature Importance Computations for Tree Models: Shapley vs. Banzhaf](https://arxiv.org/abs/2108.04126). This is an alternative to [shap](https://github.com/slundberg/shap).
 The main advantages over shap:
  - faster running times - even order of magnitude for some datasets.
  - better numerical stability. For very large trees (over 50) shap might give unreliable results. We observed some issues for much smaller trees of size 10.
 
- For most of the cases shap and ban give very similar ordering and relative values of features. For more details please check [paper](https://arxiv.org/abs/2108.04126).
+ For majority of the cases, shap and ban give identical or very similar ordering and relative values of features. For more details please check this [paper](https://arxiv.org/abs/2108.04126).
 
 # Authors
 Adam Karczmarz & Piotr Wygocki
@@ -41,7 +41,7 @@ The results will be stored in data/boston/bst_boston.file.banzhaf_fast
 
 # Datasets
 The smaller datasets are included in the repository.
-To run experiments one need to download the largest dataset Flights.
+To run experiments one needs to download the largest dataset Flights.
 Links:
 - boston https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
 - health insurance https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction?select=train.csv
@@ -52,12 +52,13 @@ Links:
 # Remark
 The shap directory contains a copy of the public repository https://github.com/slundberg/shap/.
 We use the (slightly adjusted) C implementation of TREESHAP_PATH algorithm from that repository
-(from the file shap/cext/tree_shap.h) as the ``shap_orig'' implementation. It is added as submodule. In order to download it run:
+(from the file shap/cext/tree_shap.h) as the ``shap_orig'' implementation. It is added as submodule. In order to download it, run:
+
     git submodule udate --init
 
 # Licence
 
-The code is under [MIT License](LICENSE.txt)
+The code is under [MIT License](LICENSE.txt).
 
 
 
