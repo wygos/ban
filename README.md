@@ -22,9 +22,10 @@ clang version 6.0.0-1ubuntu2
 
 
 # Build:
-$mkdir build
-$cd build
-$rm -rf *; cmake -D CMAKE_CXX_COMPILER=clang++ -D CMAKE_BUILD_TYPE=Release -D CMAKE_VERBOSE_MAKEFILE=true .. && make
+$ mkdir build
+$ cd build
+$ rm -rf *; cmake -D CMAKE_CXX_COMPILER=clang++ -D CMAKE_BUILD_TYPE=Release -D CMAKE_VERBOSE_MAKEFILE=true .. && make
+remember about fetching submodules (see Remarks section)!
 
 # Usage
 Run
